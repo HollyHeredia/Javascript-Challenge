@@ -35,9 +35,18 @@ submit.on("click", function() {
     //log to check that it's working
     console.log(filteredData);
 
-    // create for loop to actually filter data
+    // create function loop to actually filter data
     filteredData.forEach(function(filteredReport) {
         console.log(filteredReport);
         var row = tbody.append("tr");
+
+    // Use d3 to update each cell's values with data.
+    Object.entries(filteredReport).forEach(function([key, value]){
+        console.log(key, value);
+        var cell = tbody.append("td");
+        cell.text(value);
+        });
+
+    });
 
 });
