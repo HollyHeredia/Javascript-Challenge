@@ -28,3 +28,10 @@ submit.on("click", function() {
     //log to check that it's working
     console.log(inputValue);
     console.log(tableData);
+
+    // create variable to filter data
+    var filteredData = tableData.filter(bydate => bydate.datetime === inputValue);
+
+    console.log(filteredData);
+
+});
