@@ -32,9 +32,6 @@ submit.on("click", function() {
     // create variable to filter data
     var filteredData = tableData.filter(bydate => bydate.datetime === inputValue);
 
-    //log to check that it's working
-    console.log(filteredData);
-
     // create function loop to actually filter data
     filteredData.forEach(function(filteredReport) {
         console.log(filteredReport);
