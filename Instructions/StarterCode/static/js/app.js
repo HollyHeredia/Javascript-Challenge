@@ -22,3 +22,9 @@ var table = d3.select("tbody")
 submit.on("click", function() {
     table.html("")
     d3.event.preventDefault();
+    var inputElement = d3.select("#datetime");
+    var inputValue = inputElement.property("value");
+
+    //log to check that it's working
+    console.log(inputValue);
+    console.log(tableData);
