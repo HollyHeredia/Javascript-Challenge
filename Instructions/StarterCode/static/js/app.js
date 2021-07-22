@@ -4,7 +4,6 @@ var tableData = data;
 // add data to table
 var tbody = d3.select("tbody");
 
-
 data.forEach(tableData => {
   var row = tbody.append("tr");
   Object.entries(tableData).forEach(([key, value]) => {
@@ -12,4 +11,9 @@ data.forEach(tableData => {
     cell.text(value);
   });
 });
+ 
+// define variable for the filter box
+var submit = d3.select("#filter-btn");
 
+// define variable for the table/data
+var table = d3.select("tbody")
