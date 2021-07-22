@@ -10,3 +10,5 @@ In this excercise the mission was to load a table using JavaScript and HTML and 
 * Made sure my columns match the items in the data file provided.
 
 * Used a date form in the HTML document and wrote JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+
+Hope you enjoy!
