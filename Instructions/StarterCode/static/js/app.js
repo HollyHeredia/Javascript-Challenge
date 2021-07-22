@@ -35,4 +35,9 @@ submit.on("click", function() {
     //log to check that it's working
     console.log(filteredData);
 
+    // create for loop to actually filter data
+    filteredData.forEach(function(filteredReport) {
+        console.log(filteredReport);
+        var row = tbody.append("tr");
+
 });
