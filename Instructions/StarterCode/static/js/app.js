@@ -17,3 +17,8 @@ var submit = d3.select("#filter-btn");
 
 // define variable for the table/data
 var table = d3.select("tbody")
+
+// function for click
+submit.on("click", function() {
+    table.html("")
+    d3.event.preventDefault();
