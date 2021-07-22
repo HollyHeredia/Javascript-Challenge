@@ -25,10 +25,6 @@ submit.on("click", function() {
     var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
 
-    //log to check that it's working
-    console.log(inputValue);
-    console.log(tableData);
-
     // create variable to filter data
     var filteredData = tableData.filter(bydate => bydate.datetime === inputValue);
 
